@@ -1,262 +1,161 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Veterinaria San Francisco</title>
 
-<title>Clínica Veterinaria San Francisco | La Esperanza</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0b1f3a;
+            color: white;
+        }
 
-<style>
+        header {
+            background: url('https://images.unsplash.com/photo-1601758228041-f3b2795255f1') no-repeat center/cover;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
 
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
+        header h1 {
+            font-size: 3em;
+            background: rgba(0,0,0,0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
 
-body{
-background:#f7fbff;
-color:#333;
-}
+        nav {
+            background: #06152b;
+            padding: 15px;
+            text-align: center;
+        }
 
-/* HERO */
-header{
-background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-url("https://images.unsplash.com/photo-1576201836106-db1758fd1c97");
-background-size:cover;
-height:90vh;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-color:white;
-padding:20px;
-}
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-header h1{
-font-size:55px;
-}
+        section {
+            padding: 40px;
+            text-align: center;
+        }
 
-header p{
-font-size:20px;
-margin:20px 0;
-}
+        .card {
+            background: #122b4a;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 15px;
+            display: inline-block;
+            width: 280px;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+        }
 
-.btn{
-padding:15px 25px;
-border:none;
-border-radius:30px;
-margin:5px;
-cursor:pointer;
-font-size:16px;
-}
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
 
-.call{background:#00c853;color:white;}
-.map{background:#2962ff;color:white;}
+        .btn {
+            background: #00bfff;
+            padding: 10px 20px;
+            color: white;
+            border-radius: 10px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
 
-/* SECCIONES */
-section{
-padding:80px 10%;
-}
-
-h2{
-text-align:center;
-margin-bottom:30px;
-font-size:35px;
-color:#1565c0;
-}
-
-/* SOBRE */
-.about{
-background:white;
-padding:40px;
-border-radius:15px;
-box-shadow:0 10px 25px rgba(0,0,0,0.1);
-line-height:1.7;
-}
-
-/* SERVICIOS */
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-}
-
-.card{
-background:white;
-padding:25px;
-border-radius:15px;
-text-align:center;
-box-shadow:0 5px 20px rgba(0,0,0,0.1);
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-}
-
-/* OPINIONES */
-.reviews{
-background:#e3f2fd;
-}
-
-.review{
-background:white;
-padding:20px;
-margin:20px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
-
-/* GALERIA */
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:15px;
-}
-
-.gallery img{
-width:100%;
-border-radius:15px;
-}
-
-/* CONTACTO */
-.contact{
-background:#1565c0;
-color:white;
-text-align:center;
-padding:50px;
-border-radius:15px;
-}
-
-footer{
-background:#0d47a1;
-color:white;
-text-align:center;
-padding:20px;
-}
-
-</style>
-
+        footer {
+            background: #06152b;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
 
 <header>
-
-<div>
-
-<h1>🐾 Clínica Veterinaria San Francisco</h1>
-
-<p>
-Cuidado profesional, diagnóstico preciso y atención confiable para tu mascota en La Esperanza.
-</p>
-
-<a href="tel:948539326">
-<button class="btn call">📞 Llamar ahora</button>
-</a>
-
-<a href="https://maps.google.com/?q=Baquijano%20Y%20Carrillo%20La%20Esperanza">
-<button class="btn map">📍 Cómo llegar</button>
-</a>
-
-</div>
-
+    <h1>Clínica Veterinaria San Francisco 🐾<br>Confianza y cuidado para tu mascota</h1>
 </header>
 
-<section>
+<nav>
+    <a href="#about">Nosotros</a>
+    <a href="#services">Servicios</a>
+    <a href="#reviews">Opiniones</a>
+    <a href="#contact">Contacto</a>
+</nav>
 
-<h2>🏥 Sobre nosotros</h2>
+<section id="about">
+    <h2>Sobre Nosotros</h2>
+    <p>
+        La Clínica Veterinaria San Francisco es un hospital veterinario con una excelente reputación (4.4 ⭐ con más de 369 opiniones).
+        Nos especializamos en brindar atención profesional, confiable y accesible para todo tipo de mascotas.
+    </p>
+</section>
 
-<div class="about">
+<section id="services">
+    <h2>Servicios</h2>
 
-<p>
-La Clínica Veterinaria San Francisco es un hospital veterinario reconocido en La Esperanza por brindar atención médica de calidad para mascotas, combinando experiencia, responsabilidad y compromiso.
-</p>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee">
+        <h3>Consultas Médicas</h3>
+        <p>Diagnóstico y tratamiento profesional para tu mascota.</p>
+    </div>
 
-<br>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97">
+        <h3>Vacunación</h3>
+        <p>Protección completa contra enfermedades comunes.</p>
+    </div>
 
-<p>
-Nuestro equipo está preparado para atender emergencias, diagnósticos complejos y tratamientos especializados, ofreciendo siempre un trato cercano y humano tanto a las mascotas como a sus dueños.
-</p>
-
-<br>
-
-<p>
-Gracias a la confianza de nuestros clientes, contamos con una calificación de <b>4.4 estrellas</b> basada en más de <b>369 opiniones reales</b>.
-</p>
-
-</div>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1601758003122-58e6b2b1c1b1">
+        <h3>Emergencias</h3>
+        <p>Atención rápida en casos urgentes.</p>
+    </div>
 
 </section>
 
-<section>
+<section id="reviews">
+    <h2>Opiniones</h2>
 
-<h2>🩺 Servicios veterinarios</h2>
+    <div class="card">
+        <p>"Excelente veterinaria, atención precisa y confiable."</p>
+        <strong>- Roberto Deza</strong>
+    </div>
 
-<div class="services">
+    <div class="card">
+        <p>"Muy buena atención, incluso me ayudaron con un problema fuera de horario."</p>
+        <strong>- Judit C</strong>
+    </div>
 
-<div class="card">💉 Vacunación y desparasitación</div>
-<div class="card">🩺 Consultas médicas generales</div>
-<div class="card">🚑 Atención de emergencias</div>
-<div class="card">🏥 Hospitalización</div>
-<div class="card">🧪 Diagnóstico clínico</div>
-<div class="card">🐶 Atención integral de mascotas</div>
-
-</div>
-
-</section>
-
-<section class="reviews">
-
-<h2>⭐ Opiniones de clientes</h2>
-
-<div class="review">
-<strong>Roberto Deza</strong><br><br>
-"Excelente veterinaria, resuelve certeramente los problemas de las mascotas. Muy recomendable."
-</div>
-
-<div class="review">
-<strong>Judit C</strong><br><br>
-"Buena atención y amplio horario. Me ayudaron incluso cuando olvidé medicamentos de mi mascota. Muy responsables."
-</div>
-
-<div class="review">
-<strong>Matilde Otiniano</strong><br><br>
-"Atendieron muy bien a mi gatito en una emergencia. Profesionales y comprometidos con el cuidado animal."
-</div>
+    <div class="card">
+        <p>"Salvamos a mi gatito gracias a su rápida atención."</p>
+        <strong>- Matilde Otiniano</strong>
+    </div>
 
 </section>
 
-<section>
+<section id="contact">
+    <h2>Contacto</h2>
 
-<h2>🐶 Galería</h2>
+    <p><strong>📍 Dirección:</strong> Baquijano y Carrillo, La Esperanza 13006</p>
+    <p><strong>📞 Teléfono:</strong> 948 539 326</p>
+    <p><strong>🕒 Horario:</strong> Abierto - Cierra a las 7:00 p.m.</p>
 
-<div class="gallery">
-
-<img src="https://images.unsplash.com/photo-1558788353-f76d92427f16">
-<img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d">
-<img src="https://images.unsplash.com/photo-1517849845537-4d257902454a">
-
-</div>
-
-</section>
-
-<section class="contact">
-
-<h2>📍 Ubicación y contacto</h2>
-
-<p>📍 Baquijano Y Carrillo, La Esperanza 13006</p>
-<p>📌 Código: WX86+HC La Esperanza</p>
-<p>📞 948 539 326</p>
-<p>🕒 Abierto · Cierra a las 7 p.m.</p>
-
-<a href="tel:948539326">
-<button class="btn call">Llamar ahora</button>
-</a>
-
+    <a class="btn" href="https://wa.me/51948539326" target="_blank">Contactar por WhatsApp</a>
 </section>
 
 <footer>
-
-<p>Clínica Veterinaria San Francisco | La Esperanza</p>
-
+    <p>© 2026 Clínica Veterinaria San Francisco - Todos los derechos reservados</p>
 </footer>
 
 </body>
